@@ -1,0 +1,26 @@
+﻿@model ArticleModel;
+
+<div>
+	<div>
+		<h1>New Article</h1>
+	</div>
+	<div>
+		<form action="add" method="post" class="form-horizantal" role="form">
+			<div>
+				<input type="text" asp-for="Title" style="padding-bottom: 16px"/>
+			</div>
+			<br />
+			<div>
+				<input type="date" asp-for="PublishDate" name="Publishing Date" style="padding-bottom: 16px" />
+			</div>
+			<br />
+			<div>
+				<textarea asp-for="Content"></textarea>
+			</div>
+			<br />
+			<div>
+				<input type="submit" value="Add" class="btn btn-primary"/>
+			</div>
+		</form>
+	</div>
+</div>

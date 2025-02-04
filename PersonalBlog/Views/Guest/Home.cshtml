@@ -1,0 +1,34 @@
+﻿@{
+    var articles = (List<ArticleModel>)ViewData["Articles"];
+}
+<style>
+    .flex-container {
+        display: flex;
+    }
+</style>
+<div>
+    <div>
+        <table class="table text-left" style="width: 700px">
+            <thead>
+                <th colspan="3">
+                    <h1>Personal Blog</h1>
+                </th>
+            </thead>
+            <tbody>
+                @foreach (var article in articles)
+                {
+                    <tr>
+                        <td>@article.Title</td>
+                        <td>@article.PublishDate</td>
+                        <td>
+                            <a asp-controller="Guest" asp-action="Article" asp-route-id="@article.Id" class="btn btn-primary">
+                                Show
+                            </a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+</div>

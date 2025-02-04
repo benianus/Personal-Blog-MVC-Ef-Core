@@ -1,0 +1,34 @@
+﻿@model ArticleModel;
+
+@{
+	var article = (ArticleModel)ViewData["Article"];
+}
+
+<div>
+	<div>
+		<h1>Update Article</h1>
+	</div>
+	<div>
+		<form action="edit" method="post" class="form-horizantal" role="form">
+			<div>
+				<input type="hidden" asp-for="Id" value="@article.Id" style="padding-bottom :16px" />
+			</div>
+			<br />
+			<div>
+				<input type="text" asp-for="Title" value="@article.Title" style="padding-bottom :16px"/>
+			</div>
+			<br />
+			<div>
+				<input type="date" asp-for="PublishDate" value="@article.PublishDate" name="Publishing Date" style="padding-bottom: 16px" />
+			</div>
+			<br />
+			<div>
+				<input type="text" asp-for="Content" value="@article.Content" />
+			</div>
+			<br />
+			<div>
+				<input type="submit" value="Update" class="btn btn-primary" />
+			</div>
+		</form>
+	</div>
+</div>
