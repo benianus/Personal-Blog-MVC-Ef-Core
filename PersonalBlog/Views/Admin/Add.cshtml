@@ -7,19 +7,19 @@
 	<div>
 		<form action="add" method="post" class="form-horizantal" role="form">
 			<div>
-				<input type="text" asp-for="Title" style="padding-bottom: 16px"/>
+				<input type="text" asp-for="Title" style="padding-bottom: 16px; width:400px" />
 			</div>
 			<br />
 			<div>
-				<input type="date" asp-for="PublishDate" name="Publishing Date" style="padding-bottom: 16px" />
+				<input type="text" asp-for="PublishDate" style="padding-bottom: 16px; width:400px" />
 			</div>
 			<br />
 			<div>
-				<textarea asp-for="Content"></textarea>
+				<input type="text" asp-for="Content" style="padding-bottom: 16px; width:400px" />
 			</div>
 			<br />
 			<div>
-				<input type="submit" value="Add" class="btn btn-primary"/>
+				<input type="submit" value="Publish" class="btn btn-primary"/>
 			</div>
 		</form>
 	</div>

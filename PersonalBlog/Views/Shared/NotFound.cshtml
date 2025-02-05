@@ -1,4 +1,8 @@
-﻿<div>
-	<p>Article not found</p>
+﻿@{
+	var message = (string)ViewData["Message"];
+}
+
+<div>
+	<p>@message</p>
 </div>
-<a asp-controller="admin" asp-action="dashboard">Back to Articles</a>
+<a asp-controller="Login" asp-action="Login">Back to Login</a>

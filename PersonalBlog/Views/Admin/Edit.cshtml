@@ -11,19 +11,19 @@
 	<div>
 		<form action="edit" method="post" class="form-horizantal" role="form">
 			<div>
-				<input type="hidden" asp-for="Id" value="@article.Id" style="padding-bottom :16px" />
+				<input type="hidden" asp-for="Id" value="@article.Id" />
 			</div>
 			<br />
 			<div>
-				<input type="text" asp-for="Title" value="@article.Title" style="padding-bottom :16px"/>
+				<input type="text" asp-for="Title" value="@article.Title" style="padding-bottom :16px; width: 400px;" />
 			</div>
 			<br />
 			<div>
-				<input type="date" asp-for="PublishDate" value="@article.PublishDate" name="Publishing Date" style="padding-bottom: 16px" />
+				<input type="text" asp-for="PublishDate" value="@article.PublishDate" style="padding-bottom: 16px; width: 400px;" />
 			</div>
 			<br />
 			<div>
-				<input type="text" asp-for="Content" value="@article.Content" />
+				<input type="text" asp-for="Content" value="@article.Content" style="width: 400px;">
 			</div>
 			<br />
 			<div>

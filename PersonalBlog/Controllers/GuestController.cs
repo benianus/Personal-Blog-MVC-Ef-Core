@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using PersonalBlog.Data;
 
 namespace PersonalBlog.Controllers
@@ -19,6 +20,10 @@ namespace PersonalBlog.Controllers
         public IActionResult Article(int? id)
         {
             var article = _db.Articles.ToList().FirstOrDefault(article => article.Id == id);
+            if (article == null || id == null)
+            {
+                return View("NotFound");
+            }
             ViewData["Article"] = article;
             return View();
         }

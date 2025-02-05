@@ -14,6 +14,11 @@ namespace PersonalBlog.Controllers
         public IActionResult Dashboard()
         {
             var articles = _db.Articles.ToList();
+            if (articles == null)
+            {
+                ViewData["Message"] = "There is no articles, add ones";
+                return View("NotFound");
+            }
             ViewData["Articles"] = articles;
             return View();
         }
@@ -39,6 +44,7 @@ namespace PersonalBlog.Controllers
             }
 
             _db.Articles.Update(article);
+
             _db.SaveChanges();
 
             return RedirectToAction("Dashboard");

@@ -1,0 +1,32 @@
+﻿@model AuthorModel
+
+<style>
+	.padding {
+		padding-bottom: 16px
+	}
+	
+</style>
+<div class="card align-content-center" style="width: 400px; margin:32px; padding:32px">
+	<form asp-controller="Login" asp-action="Auth" method="post">
+		<div asp-validation-summary="All" class="text-danger"></div>
+		<div class="padding">
+			<label asp-for="Username">Username</label>
+			<div>
+				<input type="text" asp-for="Username"/>
+			</div>
+		</div>
+		<div class ="padding">
+			<label asp-for="Password">Password</label>
+			<div>
+				<input type="password" asp-for="Password"/>
+			</div>
+		</div>
+		<div>
+			<div>
+				<input type="submit" value="Login" class="btn btn-primary" />
+				<a asp-controller="Guest" asp-action="Home">Continue as a guest</a>
+			</div>
+		</div>
+	</form>
+
+</div>

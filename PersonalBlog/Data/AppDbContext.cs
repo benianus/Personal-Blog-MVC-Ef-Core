@@ -9,6 +9,6 @@ namespace PersonalBlog.Data
         public DbSet<PersonModel> Persons { get; set; }
         public DbSet<AuthorModel> Authors { get; set; }
         public DbSet<ArticleModel> Articles { get; set; }
-       
+
     }
 }
