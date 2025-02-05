@@ -6,14 +6,17 @@
 	</div>
 	<div>
 		<form action="add" method="post" class="form-horizantal" role="form">
+			<label asp-for="Title">Title</label>
 			<div>
 				<input type="text" asp-for="Title" style="padding-bottom: 16px; width:400px" />
 			</div>
 			<br />
+			<label asp-for="PublishDate">Publish Date</label>
 			<div>
 				<input type="text" asp-for="PublishDate" style="padding-bottom: 16px; width:400px" />
 			</div>
 			<br />
+			<label asp-for="Content">Content</label>
 			<div>
 				<input type="text" asp-for="Content" style="padding-bottom: 16px; width:400px" />
 			</div>

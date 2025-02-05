@@ -14,14 +14,17 @@
 				<input type="hidden" asp-for="Id" value="@article.Id" />
 			</div>
 			<br />
+			<label asp-for="Title">Title</label>
 			<div>
 				<input type="text" asp-for="Title" value="@article.Title" style="padding-bottom :16px; width: 400px;" />
 			</div>
 			<br />
+			<label asp-for="PublishDate">Publish Date</label>
 			<div>
 				<input type="text" asp-for="PublishDate" value="@article.PublishDate" style="padding-bottom: 16px; width: 400px;" />
 			</div>
 			<br />
+			<label asp-for="Content">Content</label>
 			<div>
 				<input type="text" asp-for="Content" value="@article.Content" style="width: 400px;">
 			</div>
