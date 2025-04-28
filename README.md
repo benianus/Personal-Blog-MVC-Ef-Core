@@ -8,7 +8,7 @@ I build a personal blog where you can write and publish articles. The blog will 
     <p><b>Home Page:</b> This page will display the list of articles published on the blog.</p>
   </li>
   <li>
-    <p>Article Page: This page will display the content of the article along with the date of publication.</p> 
+    <p><b>Article Page:</b> This page will display the content of the article along with the date of publication.</p> 
   </li>
 </ul>
 <p><b>Admin Section</b> — are the pages that only you can access to publish, edit, or delete articles.</p>
